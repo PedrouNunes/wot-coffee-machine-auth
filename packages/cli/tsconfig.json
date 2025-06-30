@@ -1,0 +1,18 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "dist",
+        "rootDir": "src",
+        "resolveJsonModule": true,
+        "esModuleInterop": true
+    },
+    "include": ["src/**/*", "src/*.json"],
+    "references": [
+        { "path": "../core" },
+        { "path": "../binding-http" },
+        { "path": "../binding-file" },
+        { "path": "../binding-websockets" },
+        { "path": "../binding-coap" },
+        { "path": "../binding-mqtt" }
+    ]
+}

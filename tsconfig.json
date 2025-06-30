@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "target": "ES2021",
+        "skipLibCheck": false,
+        "module": "Node16",
+        "moduleResolution": "Node16",
+        "outDir": "dist",
+        "strict": true,
+        "composite": true,
+        "incremental": true,
+        "sourceMap": true,
+        "noImplicitReturns": true,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "experimentalDecorators": true,
+        "declaration": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": false,
+        "skipDefaultLibCheck": false,
+        "allowJs": false,
+        "strictNullChecks": true
+    },
+    "references": [
+        { "path": "./packages/binding-coap" },
+        { "path": "./packages/binding-file" },
+        { "path": "./packages/binding-http" },
+        { "path": "./packages/binding-mbus" },
+        { "path": "./packages/binding-modbus" },
+        { "path": "./packages/binding-mqtt" },
+        { "path": "./packages/binding-netconf" },
+        { "path": "./packages/binding-opcua" },
+        { "path": "./packages/binding-websockets" },
+        { "path": "./packages/cli" },
+        { "path": "./packages/core" },
+        { "path": "./packages/browser-bundle" },
+        { "path": "./packages/examples" }
+    ],
+    "include": [
+        /** specifically nothing here */
+    ],
+    "exclude": []
+}

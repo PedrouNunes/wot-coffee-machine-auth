@@ -1,0 +1,17 @@
+{
+    "name": "oauth-coffee-machine",
+    "version": "1.0.0",
+    "description": "Projeto de máquina de café protegida com OAuth 2.0",
+    "main": "index.js",
+    "scripts": {
+        "server": "node server.js",
+        "start:exposer": "node ../../../packages/cli/dist/cli.js -f ./wot-server-servient-conf.json coffee_producer.js",
+        "start:consumer": "node ../../../packages/cli/dist/cli.js -f ./wot-client-servient-conf.json coffee_consumer.js"
+    },
+    "author": "Pedro Nunes",
+    "license": "EPL-2.0 OR W3C-20150513",
+    "devDependencies": {
+        "@node-oauth/express-oauth-server": "^3.0.1",
+        "cors": "^2.8.5"
+    }
+}

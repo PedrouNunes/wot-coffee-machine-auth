@@ -1,0 +1,39 @@
+{
+    "name": "@node-wot/binding-websockets",
+    "version": "0.9.2",
+    "description": "WebSockets client & server protocol binding for node-wot",
+    "author": "Eclipse Thingweb <thingweb-dev@eclipse.org> (https://thingweb.io/)",
+    "license": "EPL-2.0 OR W3C-20150513",
+    "repository": "https://github.com/eclipse-thingweb/node-wot/tree/master/packages/binding-websockets",
+    "publishConfig": {
+        "access": "public"
+    },
+    "files": [
+        "dist/"
+    ],
+    "main": "dist/ws.js",
+    "types": "dist/ws.d.ts",
+    "browser": "dist/ws-browser.js",
+    "dependencies": {
+        "@node-wot/binding-http": "0.9.2",
+        "@node-wot/core": "0.9.2",
+        "rxjs": "^5.5.11",
+        "slugify": "^1.4.5",
+        "ws": "^7.5.10"
+    },
+    "scripts": {
+        "build": "tsc -b",
+        "test": "mocha --require ts-node/register --extension ts",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\" \"**/*.json\""
+    },
+    "bugs": {
+        "url": "https://github.com/eclipse-thingweb/node-wot/issues"
+    },
+    "homepage": "https://github.com/eclipse-thingweb/node-wot/tree/master/packages/binding-websockets#readme",
+    "directories": {
+        "test": "test"
+    },
+    "keywords": []
+}

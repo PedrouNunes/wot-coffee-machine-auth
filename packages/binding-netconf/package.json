@@ -1,0 +1,42 @@
+{
+    "name": "@node-wot/binding-netconf",
+    "version": "0.9.2",
+    "description": "NetConf client protocol binding for node-wot",
+    "author": "Eclipse Thingweb <thingweb-dev@eclipse.org> (https://thingweb.io/)",
+    "license": "EPL-2.0 OR W3C-20150513",
+    "repository": "https://github.com/thingweb/node-wot/tree/master/packages/binding-netconf",
+    "publishConfig": {
+        "access": "public"
+    },
+    "files": [
+        "dist/"
+    ],
+    "main": "dist/netconf.js",
+    "types": "dist/netconf.d.ts",
+    "dependencies": {
+        "@node-wot/core": "0.9.2",
+        "case-1.5.3": "npm:case@^1.5.3",
+        "node-netconf": "^1.1.2",
+        "rxjs": "5.5.11",
+        "url-parse": "^1.5.8"
+    },
+    "scripts": {
+        "build": "tsc -b",
+        "test": "mocha --require ts-node/register test/netconf-client-test.ts",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\" \"**/*.json\""
+    },
+    "bugs": {
+        "url": "https://github.com/eclipse-thingweb/node-wot/issues"
+    },
+    "homepage": "https://github.com/eclipse-thingweb/node-wot/tree/master/packages/binding-netconf#readme",
+    "directories": {
+        "test": "test"
+    },
+    "keywords": [],
+    "devDependencies": {
+        "@types/node-netconf": "npm:@types/netconf@^2.0.0",
+        "@types/url-parse": "^1.4.3"
+    }
+}
